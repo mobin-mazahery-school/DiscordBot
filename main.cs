@@ -67,7 +67,7 @@ class Program
     if (message.Author.Id == _client.CurrentUser.Id)
       return;
     string messagecont = "";
-    if(!message.Content.ToLower().contains(_config["Prefix"]))
+    if(!message.Content.ToLower().Contains(_config["Prefix"]))
       return;
     messagecont = message.Content.Substring(3);
     if (message.Content == "hello")
