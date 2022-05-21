@@ -69,6 +69,7 @@ class Program
     string messagecont = "";
     if(!message.Content.ToLower().Contains(_config["Prefix"]))
       return;
+    //New Commit
     messagecont = message.Content.Substring(3);
     if (messagecont == "hello")
     {
