@@ -70,7 +70,7 @@ class Program
     if(!message.Content.ToLower().Contains(_config["Prefix"]))
       return;
     messagecont = message.Content.Substring(3);
-    if (message.Content == "hello")
+    if (messagecont == "hello")
     {
       await message.Channel.SendMessageAsync("world!");
     }  
